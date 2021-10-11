@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="card mx-2 mb-2" style="width: 18rem;" *ngFor="let song of newReleases">
+        <img class="card-img-top" [src]="song.images[0].url" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> {{song.name}} </h5>
+            <p class="card-text">{{song.artists[0].name}}</p>
+            <a href="#" class="btn btn-primary">Go listen</a>
+        </div>
+    </div>
+
+
+</div>

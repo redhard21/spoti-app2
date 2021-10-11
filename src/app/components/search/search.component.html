@@ -1,0 +1,22 @@
+<div>
+    <div class="container-fluid">
+        <input #term type="text" (keyup)="search(term.value)" class='form-control' placeholder="Search in SpotiApp">
+    </div>
+
+
+
+
+    <div class="row m-5">
+        <div class="card mx-2 mb-2" style="width: 18rem;" *ngFor="let artist of artist">
+            <img class="card-img-top" [src]='artist.images | noImage' alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"> {{artist.name}} </h5>
+                <p class="card-text">Genre: {{artist.genres}}</p>
+                <a href="#" class="btn btn-primary">Go listen</a>
+            </div>
+        </div>
+</div>
+
+<div class="row">
+
+        
